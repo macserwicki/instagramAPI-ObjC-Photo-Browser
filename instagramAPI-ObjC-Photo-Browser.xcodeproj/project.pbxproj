@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		525E03261C9901F900EA5E18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E03251C9901F900EA5E18 /* main.m */; };
+		525E03291C9901F900EA5E18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E03281C9901F900EA5E18 /* AppDelegate.m */; };
+		525E032C1C9901F900EA5E18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E032B1C9901F900EA5E18 /* ViewController.m */; };
+		525E032F1C9901F900EA5E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525E032D1C9901F900EA5E18 /* Main.storyboard */; };
+		525E03311C9901F900EA5E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525E03301C9901F900EA5E18 /* Assets.xcassets */; };
+		525E03341C9901F900EA5E18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525E03321C9901F900EA5E18 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		525E03211C9901F900EA5E18 /* instagramAPI-ObjC-Photo-Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instagramAPI-ObjC-Photo-Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		525E03251C9901F900EA5E18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		525E03271C9901F900EA5E18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		525E03281C9901F900EA5E18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		525E032A1C9901F900EA5E18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		525E032B1C9901F900EA5E18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		525E032E1C9901F900EA5E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		525E03301C9901F900EA5E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		525E03331C9901F900EA5E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		525E03351C9901F900EA5E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		525E031E1C9901F900EA5E18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		525E03181C9901F900EA5E18 = {
+			isa = PBXGroup;
+			children = (
+				525E03231C9901F900EA5E18 /* instagramAPI-ObjC-Photo-Browser */,
+				525E03221C9901F900EA5E18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		525E03221C9901F900EA5E18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				525E03211C9901F900EA5E18 /* instagramAPI-ObjC-Photo-Browser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		525E03231C9901F900EA5E18 /* instagramAPI-ObjC-Photo-Browser */ = {
+			isa = PBXGroup;
+			children = (
+				525E03271C9901F900EA5E18 /* AppDelegate.h */,
+				525E03281C9901F900EA5E18 /* AppDelegate.m */,
+				525E032A1C9901F900EA5E18 /* ViewController.h */,
+				525E032B1C9901F900EA5E18 /* ViewController.m */,
+				525E032D1C9901F900EA5E18 /* Main.storyboard */,
+				525E03301C9901F900EA5E18 /* Assets.xcassets */,
+				525E03321C9901F900EA5E18 /* LaunchScreen.storyboard */,
+				525E03351C9901F900EA5E18 /* Info.plist */,
+				525E03241C9901F900EA5E18 /* Supporting Files */,
+			);
+			path = "instagramAPI-ObjC-Photo-Browser";
+			sourceTree = "<group>";
+		};
+		525E03241C9901F900EA5E18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				525E03251C9901F900EA5E18 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		525E03201C9901F900EA5E18 /* instagramAPI-ObjC-Photo-Browser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525E03381C9901F900EA5E18 /* Build configuration list for PBXNativeTarget "instagramAPI-ObjC-Photo-Browser" */;
+			buildPhases = (
+				525E031D1C9901F900EA5E18 /* Sources */,
+				525E031E1C9901F900EA5E18 /* Frameworks */,
+				525E031F1C9901F900EA5E18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "instagramAPI-ObjC-Photo-Browser";
+			productName = "instagramAPI-ObjC-Photo-Browser";
+			productReference = 525E03211C9901F900EA5E18 /* instagramAPI-ObjC-Photo-Browser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		525E03191C9901F900EA5E18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Maciej Serwicki";
+				TargetAttributes = {
+					525E03201C9901F900EA5E18 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 525E031C1C9901F900EA5E18 /* Build configuration list for PBXProject "instagramAPI-ObjC-Photo-Browser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 525E03181C9901F900EA5E18;
+			productRefGroup = 525E03221C9901F900EA5E18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				525E03201C9901F900EA5E18 /* instagramAPI-ObjC-Photo-Browser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		525E031F1C9901F900EA5E18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525E03341C9901F900EA5E18 /* LaunchScreen.storyboard in Resources */,
+				525E03311C9901F900EA5E18 /* Assets.xcassets in Resources */,
+				525E032F1C9901F900EA5E18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		525E031D1C9901F900EA5E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525E032C1C9901F900EA5E18 /* ViewController.m in Sources */,
+				525E03291C9901F900EA5E18 /* AppDelegate.m in Sources */,
+				525E03261C9901F900EA5E18 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		525E032D1C9901F900EA5E18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525E032E1C9901F900EA5E18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		525E03321C9901F900EA5E18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525E03331C9901F900EA5E18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		525E03361C9901F900EA5E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		525E03371C9901F900EA5E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		525E03391C9901F900EA5E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "instagramAPI-ObjC-Photo-Browser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goviapps.instagramAPI-ObjC-Photo-Browser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		525E033A1C9901F900EA5E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "instagramAPI-ObjC-Photo-Browser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goviapps.instagramAPI-ObjC-Photo-Browser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		525E031C1C9901F900EA5E18 /* Build configuration list for PBXProject "instagramAPI-ObjC-Photo-Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525E03361C9901F900EA5E18 /* Debug */,
+				525E03371C9901F900EA5E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525E03381C9901F900EA5E18 /* Build configuration list for PBXNativeTarget "instagramAPI-ObjC-Photo-Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525E03391C9901F900EA5E18 /* Debug */,
+				525E033A1C9901F900EA5E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 525E03191C9901F900EA5E18 /* Project object */;
+}
