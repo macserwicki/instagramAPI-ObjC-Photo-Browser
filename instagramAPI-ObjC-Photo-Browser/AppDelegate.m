@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PhotosVC.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [window setRootViewController:[[PhotosVC alloc] init]];
+    [window makeKeyAndVisible];
+    [self setWindow:window];
+    
+    return YES;
+    
     return YES;
 }
 
