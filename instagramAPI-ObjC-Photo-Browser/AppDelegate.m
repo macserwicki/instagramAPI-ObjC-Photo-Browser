@@ -24,7 +24,9 @@
     [window makeKeyAndVisible];
     [self setWindow:window];
     
-    return YES;
+
+ 
+    
     
     return YES;
 }
