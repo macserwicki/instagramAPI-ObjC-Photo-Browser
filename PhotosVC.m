@@ -7,6 +7,7 @@
 //
 
 #import "PhotosVC.h"
+#import "PhotoCell.h"
 
 @interface PhotosVC ()
 
@@ -26,14 +27,31 @@
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.collectionView.backgroundColor = [UIColor greenColor];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"photo"];
+    [self.collectionView registerClass:[PhotoCell class] forCellWithReuseIdentifier:@"photo"];
+    self.title = @"Photo Bombers";
+
+
+    NSURLSession *session = [NSURLSession sharedSession];
+    //NSURLSessionTask *task = [[NSURLSessionTask alloc] init];
+    NSURL *url = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
+    NSURLRequest *request = [NSURLRequest requestWithURL: url];
+ 
+    NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSString *text = [[NSString alloc] initWithContentsOfURL:location encoding:NSUTF8StringEncoding error:nil];
+        NSLog(@"Response - %@", text);
+        
+    }];
+    
+    
+    
+    [task resume];
+    
 }
 
 //cell for item
 //number of items
-
 -(NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return 10;
 }
@@ -50,6 +68,4 @@
 
 
 @end
-
-
 

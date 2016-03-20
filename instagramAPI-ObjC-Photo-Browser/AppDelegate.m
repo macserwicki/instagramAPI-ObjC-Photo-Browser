@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PhotosVC.h"
+#import "SimpleAuth.h"
 
 @interface AppDelegate ()
 
@@ -19,12 +20,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
+    SimpleAuth.configuration[@"instagram"] = @{
+                                               @"client_id" : @"58b275b881464cb08045ae8f885d6006", SimpleAuthRedirectURIKey : @"treehousephotos://auth/instagram"
+                                               };
+    
+    
     UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [window setRootViewController:[[PhotosVC alloc] init]];
-    [window makeKeyAndVisible];
-    [self setWindow:window];
+    self.window = window;
     
-
+    PhotosVC *photosVC = [[PhotosVC alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: photosVC];
+    self.window.rootViewController = navigationController;
+    
+    UINavigationBar *navigationBar =  navigationController.navigationBar;
+   
+    navigationBar.tintColor = [UIColor colorWithRed: 242.0/255.0 green:122.0/255.0 blue:88.0/255.0 alpha:1.0];
+    navigationBar.barStyle = UIBarStyleBlackOpaque;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [window makeKeyAndVisible];
+    //[self setWindow:window];
  
     
     
