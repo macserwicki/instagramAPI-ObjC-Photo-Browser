@@ -8,6 +8,9 @@
 
 #import "PhotosVC.h"
 #import "PhotoCell.h"
+#import "SimpleAuth.h"
+
+
 
 @interface PhotosVC ()
 
@@ -33,20 +36,26 @@
     self.title = @"Photo Bombers";
 
 
-    NSURLSession *session = [NSURLSession sharedSession];
-    //NSURLSessionTask *task = [[NSURLSessionTask alloc] init];
-    NSURL *url = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
-    NSURLRequest *request = [NSURLRequest requestWithURL: url];
- 
-    NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSString *text = [[NSString alloc] initWithContentsOfURL:location encoding:NSUTF8StringEncoding error:nil];
-        NSLog(@"Response - %@", text);
-        
+    
+    [SimpleAuth authorize:@"instagram" completion:^(id responseObject, NSError *error) {
+        NSLog(@"response: %@", responseObject);
     }];
     
     
-    
-    [task resume];
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    //NSURLSessionTask *task = [[NSURLSessionTask alloc] init];
+//    NSURL *url = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
+//    NSURLRequest *request = [NSURLRequest requestWithURL: url];
+// 
+//    NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        NSString *text = [[NSString alloc] initWithContentsOfURL:location encoding:NSUTF8StringEncoding error:nil];
+//        NSLog(@"Response - %@", text);
+//        
+//    }];
+//    
+//    
+//    
+//    [task resume];
     
 }
 
