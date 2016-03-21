@@ -9,11 +9,12 @@
 #import "PhotosVC.h"
 #import "PhotoCell.h"
 #import "SimpleAuth.h"
+#import "KeychainWrapper.h"
 
 
 
 @interface PhotosVC ()
-
+@property (nonatomic, strong) NSString *accessToken;
 @end
 
 @implementation PhotosVC
@@ -35,11 +36,44 @@
     [self.collectionView registerClass:[PhotoCell class] forCellWithReuseIdentifier:@"photo"];
     self.title = @"Photo Bombers";
 
-
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
-    [SimpleAuth authorize:@"instagram" completion:^(id responseObject, NSError *error) {
-        NSLog(@"response: %@", responseObject);
-    }];
+    self.accessToken = [userDefaults objectForKey:@"accessToken"];
+    
+    if (self.accessToken == nil) {
+        [SimpleAuth authorize:@"instagram" completion:^(NSDictionary *responseObject, NSError *error) {
+           // NSLog(@"response: %@", responseObject);
+            
+            
+            
+            NSString *accessToken = responseObject[@"credentials"][@"token"];
+            [userDefaults setObject:accessToken forKey:@"accessToken"];
+            [userDefaults synchronize];
+           // self.accessToken = accessToken;
+
+            
+            
+        }];
+    } else {
+        
+        NSURLSession *session = [NSURLSession sharedSession];
+        NSString *urlString = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/photobomb/media/recent?access_token=%@", self.accessToken];
+        NSURL *url = [[NSURL alloc] initWithString:urlString];
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+        NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            
+            NSString *text = [[NSString alloc] initWithContentsOfURL:location encoding:NSUTF8StringEncoding error:nil];
+            
+            NSLog(@"%@",text);
+            
+            
+        }];
+
+        [task resume];
+    
+    }
+    
+    
     
     
 //    NSURLSession *session = [NSURLSession sharedSession];

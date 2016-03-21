@@ -13,6 +13,7 @@
 		525E03341C9901F900EA5E18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525E03321C9901F900EA5E18 /* LaunchScreen.storyboard */; };
 		525E03401C9A5D9500EA5E18 /* PhotosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E033F1C9A5D9500EA5E18 /* PhotosVC.m */; };
 		525E036D1C9D216000EA5E18 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E036C1C9D216000EA5E18 /* PhotoCell.m */; };
+		525E03701C9FB88400EA5E18 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E036F1C9FB88400EA5E18 /* KeychainWrapper.m */; };
 		850ABCA14E48AA39A1DBBD63 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F214B0F233C15C044F17B9 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		525E033F1C9A5D9500EA5E18 /* PhotosVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotosVC.m; path = ../PhotosVC.m; sourceTree = "<group>"; };
 		525E036B1C9D216000EA5E18 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoCell.h; path = ../PhotoCell.h; sourceTree = "<group>"; };
 		525E036C1C9D216000EA5E18 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoCell.m; path = ../PhotoCell.m; sourceTree = "<group>"; };
+		525E036E1C9FB88400EA5E18 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		525E036F1C9FB88400EA5E18 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		E12B14B61D40D35ECC44B3FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +112,8 @@
 			children = (
 				525E036B1C9D216000EA5E18 /* PhotoCell.h */,
 				525E036C1C9D216000EA5E18 /* PhotoCell.m */,
+				525E036E1C9FB88400EA5E18 /* KeychainWrapper.h */,
+				525E036F1C9FB88400EA5E18 /* KeychainWrapper.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				525E03291C9901F900EA5E18 /* AppDelegate.m in Sources */,
 				525E03401C9A5D9500EA5E18 /* PhotosVC.m in Sources */,
 				525E03261C9901F900EA5E18 /* main.m in Sources */,
+				525E03701C9FB88400EA5E18 /* KeychainWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
